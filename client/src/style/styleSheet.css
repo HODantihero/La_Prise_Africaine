@@ -1,0 +1,211 @@
+/*Common*/
+
+.title{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.text{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*Home*/
+
+.hm_flex_parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.hm_bg{
+    background-image: url(../assets/hm_bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 12px;
+}
+
+/*Socihumanitarian*/
+
+.sh_flex_parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.sh_bg{
+    background-image: url(../assets/camps.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 12px;
+}
+
+.sh_flex_item{
+    border-radius: 12px;
+    opacity: 0.9;
+    margin: 2rem;
+    background-color: #fcfcfc;
+}
+
+.sh_flex_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*About_us*/
+
+.abus_flex_parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.abus_bg{
+    background-image: url(../assets/ed_pp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 12px;
+}
+
+.abus_flex_item{
+    border-radius: 12px;
+    opacity: 0.9;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #fcfcfc;
+
+}
+
+.abus_flexgrid_parent{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 2rem 4rem 2rem;
+}
+
+.abus_flexgrid_item{
+    display: flex; 
+    padding: 0.5em;
+    width: 100%;
+}
+
+@media all and (min-width: 40em) {
+    .abus_flexgrid_item {
+      width: 50%;
+    }
+}
+
+@media all and (min-width: 60em) {
+    .abus_flexgrid_item {
+      width: 33.33%;
+    }
+}
+
+.abus_flexgrid_content{
+    border-radius: 12px;
+    opacity: 0.9;
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
+    align-items: center;
+}
+
+.abus_flexgrid_content p{
+    font-size: 25px;
+    font-weight: 700;
+    flex: 1 0 auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+/*Contact_us*/
+
+.contus_parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contus_bg{
+    background-image: url(../assets/contus_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 12px;
+}
+
+.contus_item{
+    max-width: 1320px;
+    border-radius: 12px;
+    opacity: 0.9;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #fcfcfc;
+}
+
+.contus_form{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+input,
+textarea,
+label{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    color: #828282;
+}
+
+input,
+textarea{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #828282;
+}
+input[type=submit]{
+    background-color: #545557;
+    padding: 15px 0;
+    color: #fcfcfc;
+    font-size: 18px;
+    border-bottom: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+input[type=submit]:hover{
+    background: #fcfcfc;
+    color: #1b1c1e;
+}
+input,
+textarea{
+    font-size: 18px;
+    padding: 10px;
+}
+input:focus,
+textarea:focus{
+    outline: 1px solid #828282;
+}

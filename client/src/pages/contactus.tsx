@@ -8,7 +8,7 @@ const contactus = () => {
       <div className="contus_item">
         <p className="title">Contact us</p>
         <p className="text">Feel free to send us an email if you have any questions.</p>
-        <form className="contus_form" action="../services/contact_us.php" method='POST'>
+        <form className="contus_form" action="contact_us.php" method='POST'>
           <label htmlFor="name">Name</label>
           <input type="text" name='name' id='name'/>
           <label htmlFor="email">Email</label>

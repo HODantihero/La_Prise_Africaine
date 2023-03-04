@@ -7,12 +7,12 @@ import { Box, Typography } from '@pankod/refine-mui'
 
 const About_us = () => {
   return (
-    <div className="abus_flex_parent abus_bg">
-      <Box className="abus_flex_item">
-        <Typography className='abus_grid_content' fontSize={25} fontWeight={700}>
+    <div className="common_flex_parent abus_bg">
+      <Box className="common_flex_item">
+        <p className="title">
           About Us:<br></br>
-        </Typography>
-        <Typography fontSize={18} fontWeight={400}>
+        </p>
+        <p className='text'>
           Dean Crawford is a two time laureate of the most innovative and efficient energy solution’s award from The Solar<br></br>
           Impulse Foundation and Ambassador to Made in Wallonia.<br></br>
           <br></br>He is a two-time Honor graduate from the College of the United States Air Force in Electronics and Space Telecommunications<br></br>
@@ -27,8 +27,8 @@ const About_us = () => {
           <br></br>He predicted in 2014 that 50% of the household appliances in sub-Saharan Africa would be powered by 12 to 24 volts by 2035.
           <br></br>As of today approximately 25% of the home appliances in sub-Saharan (lights, fans, TV’s, refrigerators and freezers)
           <br></br>are powered by solar panels and 12 volts, and air-conditions with 24 volts.<br></br>
-          <br></br>Coincidently he initials DC symbolize Direct-Current
-        </Typography>
+          <br></br>Coincidently he initials DC symbolize Direct-Current.
+        </p>
       </Box>
       <div className="abus_flexgrid_parent">
         <Box className="abus_flexgrid_item">

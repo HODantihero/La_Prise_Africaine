@@ -4,13 +4,13 @@ import { table } from 'assets'
 
 const Sociohumanitarian = () => {
     return(
-        <div className="sh_flex_parent sh_bg">
-            <div className="sh_flex_item">
-                <p className="sh_flex_item title">
+        <div className="common_flex_parent sh_bg">
+            <div className="common_flex_item">
+                <p className="common_flex_item title">
                     Humanitarian<br></br>
                     Disaster relief advantages when using low voltage appliances and tools
                 </p>
-                <p className="sh_flex_item text">
+                <p className="common_flex_item text">
                     No risk of electrocution! This is extremely important in wet or flooded areas.
                     Poses no danger to individuals or the environment.
                     Plug and play for individuals with limited technical knowledge.
@@ -21,10 +21,8 @@ const Sociohumanitarian = () => {
                     Can operate from 12 volt batteries as well.
                 </p>
             </div>
-            <div className="sh_flex_item">
-                <div className="">
-                    <img src={table} alt=""></img>
-                </div>
+            <div className="common_flex_item">
+                <img src={table} alt=""></img>
             </div>
         </div>
     )

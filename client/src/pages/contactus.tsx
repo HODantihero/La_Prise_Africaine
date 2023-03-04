@@ -7,6 +7,10 @@ const contactus = () => {
     <div className="contus_parent contus_bg">
       <div className="contus_item">
         <p className="title">Contact us</p>
+        <p className='alert'>
+          *service not yet available, please send an email manually
+          <br></br>my email is "dc@lapriseafricaine.com" .
+        </p>
         <p className="text">Feel free to send us an email if you have any questions.</p>
         <form className="contus_form" action="contact_us.php" method='POST'>
           <label htmlFor="name">Name</label>

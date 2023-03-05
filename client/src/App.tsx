@@ -55,7 +55,7 @@ axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
 });
 
 function App() {
-  const authProvider: AuthProvider = {
+  /*const authProvider: AuthProvider = {
     login: ({ credential }: CredentialResponse) => {
       const profileObj = credential ? parseJwt(credential) : null;
 
@@ -104,7 +104,7 @@ function App() {
         return Promise.resolve(JSON.parse(user));
       }
     },
-  };
+  };*/
 
   return (
     <ColorModeContextProvider>
@@ -152,8 +152,8 @@ function App() {
           Layout={Layout}
           Header={Header}
           routerProvider={routerProvider}
-          authProvider={authProvider}
-          LoginPage={Login}
+          //authProvider={authProvider}
+          //LoginPage={Login}
         />
       </RefineSnackbarProvider>
     </ColorModeContextProvider>

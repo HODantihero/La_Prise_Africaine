@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Box, Typography } from '@pankod/refine-mui';
 import '../style/styleSheet.css'
 import emailjs from '@emailjs/browser';
@@ -9,6 +9,20 @@ import emailjs from '@emailjs/browser';
 //ALFPnTOq0pwhSuqeF
 
 const contactus = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_nw7es8g', 'template_fspl72t', form.current, 'ALFPnTOq0pwhSuqeF')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    };
+
   return (
     <div className="contus_parent contus_bg">
       <div className="contus_item">
@@ -18,7 +32,7 @@ const contactus = () => {
           <br></br>my email is "dc@lapriseafricaine.com" .
         </p>
         <p className="text">Feel free to send us an email if you have any questions.</p>
-        <form className="contus_form">
+        <form className="contus_form" ref={form} onSubmit={sendEmail}>
           <label htmlFor="name">Name</label>
           <input type="text" name='name' id='name'/>
           <label htmlFor="email">Email</label>
